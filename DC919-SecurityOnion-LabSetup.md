@@ -1,4 +1,10 @@
-# System Requirements
+# DC919 February 2019 IDS/IPS Intro Lab
+Author: wavelength  ( @\_\_wavelength\_\_ )
+
+## Introduction
+This guide will walk you through getting an "evaluation" Security Onion VM setup in Virtual Box (and if I have time, VMWare Player).   I am making no assumptions on your level of knowledge, so this is written so even a novice can walkthrough these instructions.
+
+## System Requirements
 ```sh
 CPU: minimum 4x vCPUs
 RAM: minimum 8GB
@@ -26,4 +32,5 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   11. Click OK.
   
  ## Setting up Security Onion VM
- 
+  1.  Power on the newly created VM.
+  2.  
