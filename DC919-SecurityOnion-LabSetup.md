@@ -5,7 +5,7 @@ RAM: minimum 8GB
 HDD: minimum 40GB
 ```
 
-# VM configuration (VirtualBox)
+## VM configuration (VirtualBox)
 
   1.  Create a new VM using Expert Mode.   Name it whatever you would like.   Set the type to "Linux" and the version to "Ubuntu (64-bit)".
   2.  Set the memory size for the VM to a minimum of 8GB, but if possible, give the VM as much memory as you can.
