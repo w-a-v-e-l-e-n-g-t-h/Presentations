@@ -33,4 +33,39 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   
  ## Setting up Security Onion VM
   1.  Power on the newly created VM.
-  2.  
+  2.  When the Security Onion bootloader screen appears, chose "Boot SecurityOnion 16.04.5.5" and press enter.
+  3.  The Security Onion desktop will appear.   On this screen, double click the "Install SecurityOnion 16.04" icon.
+  4.  Select the language you want to use and click "Continue".
+  5.  On the "Preparing to install SecurityOnion" screen, check the "Download updates while install SecurityOnion" option and click "Continue". 
+  6.  On the "Installation type", select "Erase disk and install SecurityOnion".   Click "Install Now".
+  7.  A confirmation screen will appear labelled "Write the changes to disks?".   Click "Continue".
+  8.  On the "Where are you?" screen, select "New York" for the Eastern time zone.   Click "Continue".
+  9.  On the "Keyboard layout" screen, select your preferred keyboard layout and language.   Click "Continue".
+  10. Fill out the "Who are you?" sreen with your information and password.   Note - you can not use the username 'root'.   Click "Continue" when you have filled out all the required fields.
+  11. The "Install" window will appear will Security Onion installs.   Wait for this process to complete.
+  12. When the "Installation Complete" prompt appears, click "Restart Now".   The VM will shutdown.   When prompted, press "Enter".
+  13. The system will reboot.   Allow the bootloader counter complete and boot automatically.
+  14. Login with the account you setup in step 10.
+  15. Double-click the "Setup" icon on the Desktop.   You will be prompted for the password for administrative tasks.   This is the password you used to login.
+  16. On the "Security Onion Setup..." screen, click "Yes, Continue!".
+  17. When asked if you would "like to configure /etc/network/interfaces now?", click the "Yes" option.
+  18. Select the first interface in the list to be the "management interface" and click "OK".
+  19. When asked to use "DHCP or static addressing", select "DHCP" and click "OK".
+  20. When asked if you would "like to configure sniffing (monitor) interfaces?", click the "Yes" option.
+  21. Select the remaining interface listed to be the "sniffing" interface and click "OK".
+  22. Click the "Yes, make changes!" option when prompted.
+  23. Click the "Yes, reboot!" option when prompted.
+  24. The system will not reboot.   Allow the system to automatically boot back to the login screen.
+  25. Login again.
+  26. Double-click the "Setup" icon on the Desktop again.  You will be prompted for the password for administrative tasks.   This is the password you used to login.
+  27. On the "Security Onion Setup..." screen, click "Yes, Continue!" again.
+  28. When asked if you would "like to skip network configuration?", click the "Yes" option.
+  29. When asked if you would like to use "Evaluation Mode or Production Mode", select "Evaluation Mode" and click "OK".
+  30. When asked "which network interface should be monitoring?", make sure that the second interface (which you selected in Step 21) is still selected.   Click "OK".
+  31. On the "Let's create out first user account", enter a username.   Make note of it.   This will be used to login to the Security Onion applications.   Click "OK".
+  32. You will next be prompted for a username to be used with the account created in Step 31.   Enter a password and make note of it.   Click "OK".   Confirm the password and click "OK". 
+  33. A prompt will appear listing all of the changes that the setup will make to the system.    Click the "Yes, proceed with the changes!" option.
+  34. The setup process will now proceed.   Let this process run until it completes.
+  35. On the "Security Onion Setup is now complete!" screen, click "OK".   Read each of the screens that appears next.  I recommend making note of the commands and they are useful to know.
+  36. Once you have clicked through all of the prompts, I recommend shutting down the VM.
+  37. (Optional) You can make a Clone of the VM if you would like to have a copy to revert to after trying out the system.
