@@ -62,7 +62,7 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   28. When asked if you would "like to skip network configuration?", click the "Yes" option.
   29. When asked if you would like to use "Evaluation Mode or Production Mode", select "Evaluation Mode" and click "OK".
   30. When asked "which network interface should be monitoring?", make sure that the second interface (which you selected in Step 21) is still selected.   Click "OK".
-  31. On the "Let's create out first user account", enter a username.   Make note of it.   This will be used to login to the Security Onion applications.   Click "OK".
+  31. On the "Let's create our first user account", enter a username.   Make note of it.   This will be used to login to the Security Onion applications.   Click "OK".
   32. You will next be prompted for a username to be used with the account created in Step 31.   Enter a password and make note of it.   Click "OK".   Confirm the password and click "OK". 
   33. A prompt will appear listing all of the changes that the setup will make to the system.    Click the "Yes, proceed with the changes!" option.
   34. The setup process will now proceed.   Let this process run until it completes.
