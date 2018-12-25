@@ -69,5 +69,5 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   35. On the "Security Onion Setup is now complete!" screen, click "OK".   Read each of the screens that appears next.  I recommend making note of the commands as they are useful to know.
   36. Once you have clicked through all of the prompts, open a terminal window by going to "Applications", "System Tools" and then "Xfce Terminal".
   37. At the command prompt, enter the following command "sudo ufw allow 443" and, if prompted for a password, enter the same password used to login to Security Onion.   Also run the command "sudo ufw allow 7443"; again, if prompted for a password, use the password used to login to Security Onion. 
-  40. At this point, you can shutdown Security Onion by clicking on the icon in the upper right corner of the VM screen, then click the power button icon and then "Power Off".   
+  40. At this point, you can shutdown Security Onion by clicking on the icon in the upper right corner of the VM screen, then the power button icon and finally "Power Off".   
   39. (Optional) You can make a Clone of the VM if you would like to have a copy to revert to after trying out the system.
