@@ -23,12 +23,17 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   2.  Set the memory size for the VM to a minimum of 8GB, but if possible, give the VM as much memory as you can.
   3.  Select "Create a new virtual hard disk now" and click "Create."
   4.  The virtual hard drive creation dialog screen will appear.   Specify the size of the hard drive for the VM and click "Create".   The minimum size of the drive should be 40GB.
+      1. File type (VDI) and Storage type (Dynamically allocated) should remain at their default values.
   5.  The VM should now be in the list of configured VMs.    
   6.  Right click on the VM and select "Settings".
   7.  Click on "System" and then "Processor".   Set the number vCPUs for the VM to a minimum of four, but preferrably more.
-  8.  Click on "Storage" and click on the CD-ROM/DVD icon with "Empty" displayed next to it.    The menu will update and under "Attributes", "Optical Drive" will appear.   Click the CD-ROM/DVD icon in that section and select "Choose Virtual Optical Disc Format".  Go to the location where you saved the ISO file and select it.
+  8.  Click on "Storage" and click on the CD-ROM/DVD icon with "Empty" displayed next to it.    The menu will update and under "Attributes", "Optical Drive" will appear.   Click the CD-ROM/DVD icon in that section and select "Choose Virtual Optical Disk File".  Go to the location where you saved the ISO file and select it.
   9.  Click on "Audio" and disable audio features by unchecking "Enable Audio".
   10. Click on "Network" and verify that "Adapter 1" is enabled and is attached to NAT.   Select "Adapter 2", enable it and set the "Attached to:" option to "Host-only Adapter". 
+      1. If selecting "Host-only Adapter" shows "Invalid settings detected", you will need to create a host-only adapter first:
+      2. For "Adapter 2", un-check "Enable Network Adapter" and click OK
+      3. Click File -> Host Network Manager -> Create -> Close
+      4. Now you should be able to go back to step 10 and complete the configuration.
   11. Click OK.
   
  ## Setting up Security Onion VM
@@ -67,7 +72,11 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   33. A prompt will appear listing all of the changes that the setup will make to the system.    Click the "Yes, proceed with the changes!" option.
   34. The setup process will now proceed.   Let this process run until it completes.
   35. On the "Security Onion Setup is now complete!" screen, click "OK".   Read each of the screens that appears next.  I recommend making note of the commands as they are useful to know.
+      1. `sudo sostat` - detailed information about service status
+      2. `sudo sostat-quick` - guided tour of the sostat output
+      3. `sudo sostat-redacted` - redacted information, safe to share publicly
+      4. `sudo so-allow` - allow connections to ports other than TCP 22
   36. Once you have clicked through all of the prompts, open a terminal window by going to "Applications", "System Tools" and then "Xfce Terminal".
   37. At the command prompt, enter the following command "sudo ufw allow 443" and, if prompted for a password, enter the same password used to login to Security Onion.   Also run the command "sudo ufw allow 7443"; again, if prompted for a password, use the password used to login to Security Onion. 
   40. At this point, you can shutdown Security Onion by clicking on the icon in the upper right corner of the VM screen, then the power button icon and finally "Power Off".   
-  39. (Optional) You can make a Clone of the VM if you would like to have a copy to revert to after trying out the system.
+  39. (Optional) You can make a [Clone](https://www.virtualbox.org/manual/ch02.html#clone) or [Snapshot](https://www.virtualbox.org/manual/ch02.html#snapshots) of the VM if you would like to have a copy to revert to after trying out the system.
