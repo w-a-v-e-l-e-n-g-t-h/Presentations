@@ -10,7 +10,7 @@ You should have a Security Onion VM completely setup to proceed.   Ideally, you 
 ```
 
 ## Downloads
-The following files should be downloaded to your Security Onion:
+The following files should be downloaded to your Security Onion:\
 https://github.com/wave-length/Presentations/raw/master/MAR19-DC919-SecurityOnion/Files/Ex1-honeynet.org-Scan19.tar.gz
 
 ### Exercise 1
