@@ -46,7 +46,7 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   7.  A confirmation screen will appear labelled "Write the changes to disks?".   Click "Continue".
   8.  On the "Where are you?" screen, select "New York" for the Eastern time zone.   Click "Continue".
   9.  On the "Keyboard layout" screen, select your preferred keyboard layout and language.   Click "Continue".
-  10. Fill out the "Who are you?" screen with your information and password.   Note - you can not use the username 'root'.   Click "Continue" when you have filled out all the required fields.
+  10. Fill out the "Who are you?" screen with your information and password.   Note - you can not use the username 'root'.  Make note of this username and password as you will need it again. Click "Continue" when you have filled out all the required fields.
   11. The "Install" window will appear will Security Onion installs.   Wait for this process to complete.
   12. When the "Installation Complete" prompt appears, click "Restart Now".   The VM will shutdown.   When prompted, press "Enter".
   13. The system will reboot.   Allow the bootloader counter to complete and boot automatically.
@@ -67,7 +67,7 @@ https://github.com/Security-Onion-Solutions/security-onion/releases/tag/v16.04.5
   28. When asked if you would "like to skip network configuration?", click the "Yes" option.
   29. When asked if you would like to use "Evaluation Mode or Production Mode", select "Evaluation Mode" and click "OK".
   30. When asked "which network interface should be monitoring?", make sure that the second interface (which you selected in Step 21) is still selected.   Click "OK".
-  31. On the "Let's create our first user account", enter a username.   Make note of it.   This will be used to login to the Security Onion applications and is separate of the password used to login to the OS.   Click "OK".
+  31. On the "Let's create our first user account", enter a username.   Make note of it.   This will be used to login to the Security Onion applications and is separate of the password used to login to the OS.  Click "OK".
   32. You will next be prompted for a password to be used with the account created in Step 31.   Enter a password and make note of it.   Click "OK".   Confirm the password and click "OK". 
   33. A prompt will appear listing all of the changes that the setup will make to the system.    Click the "Yes, proceed with the changes!" option.
   34. The setup process will now proceed.   Let this process run until it completes.
