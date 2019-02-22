@@ -30,7 +30,8 @@ When you press enter, you will be prompted for the sudo password; use the passwo
   
 ### Exercise 2
 1. If there are any alerts still present in squil, clear them before proceeding.
-2. Run tcpreplay, as shown in Exercise 1, and import Ex2-RealEvent.pcap.
+2. Run tcpreplay, as shown in Exercise 1, and import Ex2-RealEvent.pcap.\
+ `sudo sleep 15s && sudo tcpreplay -i <Ethernet interface name> -t Ex2-RealEvent.pcap`
 3. What alert did this PCAP generate?
 4. What is the source IP and port of this packet?   What is the destination IP and port of this packet?
 5. Research the alert using the information provided and the following links:\
