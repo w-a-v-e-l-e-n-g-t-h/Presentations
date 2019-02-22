@@ -33,13 +33,13 @@ When you press enter, you will be prompted for the sudo password; use the passwo
 2. Run tcpreplay, as shown in Exercise 1, and import Ex2-RealEvent.pcap.
 3. What alert did this PCAP generate?
 4. What is the source IP and port of this packet?   What is the destination IP and port of this packet?
-5. Research the alert using the information provided and the following links:
-
-https://attack.mitre.org/software/S0153/
-https://blogs.jpcert.or.jp/en/2017/04/redleaves---malware-based-on-open-source-rat.html
-https://www.carbonblack.com/2017/05/09/carbon-black-threat-research-dissects-red-leaves-malware-leverages-dll-side-loading/
-
-What is the platform (OS) that this malware affects?   What is the primary method that this malware uses to infect systems (hint: it is platform specific)?
+5. Research the alert using the information provided and the following links:\
+\
+https://attack.mitre.org/software/S0153/ \
+https://blogs.jpcert.or.jp/en/2017/04/redleaves---malware-based-on-open-source-rat.html \
+https://www.carbonblack.com/2017/05/09/carbon-black-threat-research-dissects-red-leaves-malware-leverages-dll-side-loading/ \
+\
+What is the platform (OS) that this malware affects?   What is the primary method that this malware uses to infect systems (hint: it is platform specific)?\
 6. After additional investigation with your operations team, you determine that both systems in this conversation are Linux servers.   Is this malware compatible with these servers?
 7. Based on the information gathered in your investigation, what would be your determination - valid alert or false positive?
 
