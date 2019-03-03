@@ -2,14 +2,15 @@
 Author: wavelength  ( @\_\_wavelength\_\_ )
 
 ## Introduction
-Placeholder
+These exercises are meant only as brief introductions to the tools and interfaces available in Security Onion.\
+For example, Kibana is a complex and powerful tool and would require an entire class to thoroughly introduce.
 
 ## Pre-requisites
-```sh
-You should have a Security Onion VM completely setup to proceed.   Ideally, you would have a snapshot of the fresh install that you can revert to between exercises.\
+You should have a Security Onion VM completely setup to proceed.\
+Ideally, you would have a snapshot of the fresh install that you can revert to between exercises.\
 
-You should have some familiarity with Linux to be able to complete these exercises.   Some step-by-step instructions are provided to familiarize you with Security Onion or to ensure that exercises work as intended.
-```
+You should have some familiarity with Linux to be able to complete these exercises.\
+Some step-by-step instructions are provided to familiarize you with Security Onion or to ensure that exercises work as intended.
 
 ## Downloads
 The following files should be downloaded to your Security Onion:\
@@ -32,13 +33,13 @@ When you press enter, you will be prompted for the sudo password; use the passwo
 1. Minimize the squil interface and open the squert interface by using the icon on the desktop.   The login is the same username and password as squil.   Once logged in, clear all of the alerts in the squert interface.   This is done by clicking on the red square next to an event and then clicking the "No Action Req'd" option on the left side of the window.   This section of interface will be explained shortly.
 2. Go back to your terminal once all of the events are cleared in squert. Change directory to '/opt/examples' by typing 'cd /opt/examples'.  Run tcpreplay, as shown in Exercise 1, and import bredolab-sample.pcap.\
  `sudo tcpreplay -i <Ethernet interface name> -M 100 -t bredolab.pcap`\
- You will like be prompted for your root password, as in Exercise 1.
-3. Once tcpreplay completes, in squert, click the interface refresh button at the top of the screen.  It will be two arrows making a circle and will likely be marked with a red exclamation point.   After clicking this icon, at least six alerts should appear in the squert interface.\
-4. Click the alert marked "ET Trojan Tibs/Harnig Downloaded Activity".   Note the information that appears - the IDPS signature, including some links to information and event specific information, such as time, source host and destination host.\
-5. Under "Categorize 4 Event(s)", click the red square with the number four in it.  The number indicates the number of packets that were observed that triggered this alert.   Additional rows will appear that show the packets and their capture times.   Click the event ID for one of the packets.   This will initiate a pivot from squert to the capME! interface.   Here you will be able to examine the contains of the captured packet and, if desired, download the PCAP from the system of offline analysis.\
+ You will probably be prompted for your root password, as in Exercise 1.
+3. Once tcpreplay completes, in squert, click the interface refresh button at the top of the screen.  It will be two arrows making a circle and will likely be marked with a red exclamation point.   After clicking this icon, at least six alerts should appear in the squert interface.
+4. Click the alert marked "ET Trojan Tibs/Harnig Downloaded Activity".   Note the information that appears - the IDPS signature, including some links to information and event specific information, such as time, source host and destination host.
+5. Under "Categorize 4 Event(s)", click the red square with the number four in it.  The number indicates the number of packets that were observed that triggered this alert.   Additional rows will appear that show the packets and their capture times.   Click the event ID for one of the packets.   This will initiate a pivot from squert to the capME! interface.   Here you will be able to examine the contains of the captured packet and, if desired, download the PCAP from the system of offline analysis.
 6. Using the information presented in the capME! interface, what was the domain from which this Trojan was downloaded?  Hint: Look at the lines marked "SRC".
-7. Using the information presented in the capME! interface, it appears that the webserver sent something back - what?  Hint: Look at the lines marked "DST".\
-8. It looks like this might be malicious.  We have the ability to classify events in squert.   Close the capME! tab and go back to the squert interface.   The event for "ET Trojan Tibs/Harnig Downloaded Activity" should still be selected.   Make sure "Categorize 4 Event(s)" is still displayed and then click the link on the left labelled "malicious" under "Classification".   If "Categorize 4 Event(s)" instead says "Categorize 0 Event(s)" or another number, click the checkbox under the red square with four in it until "Categorize 4 Event(s)" is displayed and click the "malicious" category link.\
+7. Using the information presented in the capME! interface, it appears that the webserver sent something back - what?  Hint: Look at the lines marked "DST".
+8. It looks like this might be malicious.  We have the ability to classify events in squert.   Close the capME! tab and go back to the squert interface.   The event for "ET Trojan Tibs/Harnig Downloaded Activity" should still be selected.   Make sure "Categorize 4 Event(s)" is still displayed and then click the link on the left labelled "malicious" under "Classification".   If "Categorize 4 Event(s)" instead says "Categorize 0 Event(s)" or another number, click the checkbox under the red square with four in it until "Categorize 4 Event(s)" is displayed and click the "malicious" category link.
 9. The event we were just looking at now will disappear from the queue.    To view it again, click the number four next to malicious in the "Classification" section.    To view the queue again after trying this, click the "YES" next to "Filtered By Object" near the top right right of the interface.   Doing this will display all of the events in the system, including categorized events.   Click the "OFF" next to "queue only" and then the "refresh" button will restore the queue.
 
 ### Exercise 3
