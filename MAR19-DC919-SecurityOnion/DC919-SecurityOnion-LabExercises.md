@@ -2,18 +2,18 @@
 Author: wavelength  ( @\_\_wavelength\_\_ )
 
 ## Introduction
-These exercises are meant only as brief introductions to the tools and interfaces available in Security Onion.\
+These exercises are meant only as brief introductions to the tools and interfaces available in Security Onion.
 
 ## Pre-requisites
 You should have a Security Onion VM completely setup to proceed.\
-Ideally, you would have a snapshot of the fresh install that you can revert to between exercises.\
+Ideally, you would have a snapshot of the fresh install that you can revert to between exercises.
 
 You should have some familiarity with Linux to be able to complete these exercises.\
 Some step-by-step instructions are provided to familiarize you with Security Onion or to ensure that exercises work as intended.
 
 ## Downloads
 The following files should be downloaded to your Security Onion:\
-https://github.com/wave-length/Presentations/raw/master/MAR19-DC919-SecurityOnion/Files/Ex1-honeynet.org-Scan19.tar.gz\
+https://github.com/wave-length/Presentations/raw/master/MAR19-DC919-SecurityOnion/Files/Ex1-honeynet.org-Scan19.tar.gz  \
 https://s3.amazonaws.com/tcpreplay-pcap-files/bigFlows.pcap
 
 ### Exercise 1 - Intro to squil
@@ -48,7 +48,7 @@ When you press enter, you will be prompted for the sudo password; use the passwo
 9. The event we were just looking at now will disappear from the queue.    To view it again, click the number four next to malicious in the "Classification" section.    To view the queue again after trying this, click the "YES" next to "Filtered By Object" near the top right right of the interface.   Doing this will display all of the events in the system, including categorized events.   Click the "OFF" next to "queue only" and then the "refresh" button will restore the queue.
 
 ### Exercise 3 - Intro to Kibana
-1. This exercise will require a lot of data, so we will be using the bigFlows.pcap provided by the author of tcpreplay.  Load this pcap the same way we have loaded the pcaps in Exercises 1 and 2:
+1. This exercise will require a lot of data, so we will be using the bigFlows.pcap provided by the author of tcpreplay.  Load this pcap the same way we have loaded the pcaps in Exercises 1 and 2:\
  `sudo tcpreplay -i <Ethernet interface name> -M 100 -t bigFlows.pcap`
 2. This pcap will take a minute or two to load into Security Onion and be analyzed.   While that is happening, you can minimize the terminal window and open Kibana using the link on your Security Onion desktop.   If you are prompted to login, it is the same credentials used for squil and squert.
 3. Check that the pcap has completed loading by checking the terminal window to statistics stating the number of packets "Attempted" and "Successful" as both being 791,615.   If the actual numbers are different, that is OK.
