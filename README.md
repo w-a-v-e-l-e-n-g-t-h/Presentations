@@ -9,5 +9,5 @@ March 2019:<br/>
 ["What's In Your Network": An Introduction to IDS/IPS (Lab Exercises)](/MAR19-DC919-SecurityOnion/DC919-SecurityOnion-LabExercises.md)
 
 June 2019:<br/> 
-Header Steganography: Abusing the IPv6 Header and Prefix-Delegation for Data Exilfiltration  -  PENDING
+Header Steganography: Abusing the IPv6 Header and Prefix-Delegation for Data Exilfiltration  -  PENDING  
 (CackalackyCon version - did not include demonstration or PoC code, but did include more IPv6 intro information)
